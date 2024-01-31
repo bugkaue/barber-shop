@@ -98,13 +98,13 @@ async function seedDatabase() {
     const barbershops = [];
     for (let i = 0; i < 10; i++) {
       const name = creativeNames[i];
-      const address = addresses[i];
+      const addrress = addresses[i];
       const imageUrl = images[i];
 
       const barbershop = await prisma.barbershop.create({
         data: {
           name,
-          address,
+          addrress,
           imageUrl: imageUrl,
         },
       });

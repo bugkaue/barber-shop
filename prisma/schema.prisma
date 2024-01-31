@@ -19,7 +19,7 @@ model User {
 model Barbershop {
   id       String    @id @default(uuid())
   name     String
-  addrress String
+  addrress  String
   imageUrl String
   Service  Service[]
   Booking  Booking[]
